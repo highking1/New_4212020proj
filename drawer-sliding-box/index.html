@@ -49,8 +49,10 @@
   font-weight: 700;
 }
 #req-cal-bk{
-  background-color: cyan;
+  background-color: rgba(0	, 0, 0, 0.9);
   height: 140px;
+  animation: reqcalbk 10s infinite;
+  color: #fff;
 }
 
 .req-cal-bk-in h3{
@@ -67,7 +69,14 @@
 }
 #feedback {
 	width: 100%;
-	height:100% auto;
+  height:100% auto;
+  background-image: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    );
+    background-attachment: fixed;
   }
   .card{
 	  padding: 2px;
@@ -94,6 +103,21 @@
     border: 1px solid yellow;
   }
 }
+@keyframes reqcalbk {
+  25%{
+    background-image: linear-gradient( 45deg, rgba(0,0,0,1), rgba(0,0,0,0.8));
+  }
+  50%{
+    background-image:linear-gradient( 45deg, rgba(0,0,0,1), rgba(0,0,0,0.6));
+  }
+  75%{
+    background-image: linear-gradient( 45deg, rgba(0,0,0,1), rgba(0,0,0,0.4));
+  }
+  100%{
+    background-image: linear-gradient( 45deg, rgba(0,0,0,1), rgba(0,0,0,0.2));;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .req-cal-bk-in .callus-btn{
@@ -132,20 +156,6 @@
       }
     });
 
-    $('#jquery-slidebox-3').slidebox({
-      handle: '.handle',
-      contents: '.contents',
-      direction: 'desc',
-      fulcrum: 1,
-      space: 40,
-      openAfterFunc: function(container, handle, contents) {
-        handle.html('(3)<br /><br />→<br />c<br />l<br />o<br />s<br />e<br />→');
-      },
-      closeAfterFunc: function(container, handle, contents) {
-        handle.html('(3)<br /><br />←<br />o<br />p<br />e<br />n<br />←');
-      }
-    });
-
     $('#jquery-slidebox-4').slidebox({
       handle: '.handle',
       contents: '.contents',
@@ -158,7 +168,6 @@
         handle.html('DIRECT LINKS');
       }
     });
-
   });
 </script>
 <!-- // jquery.slidebox -->
@@ -217,15 +226,6 @@
         </td>
       </tr>
     </table>
-  </div>
-</div>
-
-<div id="jquery-slidebox-3" class="clearfix">
-  <div class="handle">
-    (3)<br /><br />←<br />o<br />p<br />e<br />n<br />←
-  </div>
-  <div class="contents">
-
   </div>
 </div>
 
@@ -299,7 +299,7 @@
 </section>
 
 <section id="feedback">
-  <div style="background-color: #ccc; ">
+  <div>
       <br><br />
       <h2 class="text-center">Feedback Section</h2>
       <br><br />
@@ -420,8 +420,193 @@
       <br><br />
   </div>
 </section>
+<section id="Have-An-Idea">
+  <br><br />
+  <h2 class="text-center">Have An Idea For Web App? Contact</h2>
+  <h4 class="text-center">AnandSolutions</h4>
+  <br>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-2 col-md-2 hide-leaf">
+              <img src="img/leftfleaf.svg" height="200px" style="float:right;">
+          </div>
+          <div class="col-lg-8 col-md-8">
+              <p>AnandSolutions provides various services and solutions that are deliberately helpful and cost
+                  efficient. We always try to get beyond the expectation of our clients by providing the services
+                  beneficial to them. We never feel bad either client is knowladgable in IT Feild or not. We
+                  always lestin to you as our Clients and Gives them solution According to there needs or
+                  requirement. We've well experinced team that can work with Java, Python, .NET/C#, php
+                  Technologies. </p>
+          </div>
+          <div class="col-lg-2 col-md-2 hide-leaf">
+              <img src="img/rightleaf.svg" height="200px"
+                  style="  -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+          </div>
+      </div>
+  </div>
+  <br><br />
+</section>
 
+<section id="maps">
+  <br><br />
+  <h2 class="text-center wcus-head">Why choose AnandSolutions</h2>
+  <br><br />
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-4">
+              <div class="card" style="width: 100%;">
+                  <h2 class="card-img-top text-center" style="color: red; font-size: 42px; margin-top:14px;">
+                    <img src="img/services/webdesign.png" alt="web design">
+                        </h2>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Web Developement</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of the card's content.</p>
+                  </div>
+              </div>
+          </div>
 
+          <div class="col-lg-3 col-md-4">
+              <div class="card" style="width: 100%;">
+                  <h2 class="card-img-top text-center" style="color: red; font-size: 42px; margin-top:14px;">
+                    <img src="img/services/webdesign.png" alt="web design">
+                        </h2>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Android Developement</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+              <div class="card" style="width: 100%;">
+                  <h2 class="card-img-top text-center" style="color: red; font-size: 42px; margin-top:14px;">
+                    <img src="img/services/webdesign.png" alt="web design">
+                    </h2>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">SEO</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+              <div class="card" style="width: 100%;">
+                  <h2 class="card-img-top text-center" style="color: red; font-size: 42px; margin-top:14px;">
+                    <img src="img/services/webdesign.png" alt="web design">
+                    </h2>
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Cyber Security</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                          of the card's content.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <br><br />
+</section>
+<section id="" style="background-color: #ccc;">
+  <br><br />
+  <h2 class="text-center" style="color: #222">We Can Work With Fallowing Industries</h2>
+  <center>
+    <hr style="height: 2px; width: 60%; background-color: #222;">
+  </center>
+  <br><br />
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Transport & Logistics</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Bespoke Enterprise Development</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>MVPs for Startups</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Medical Mobile App Development</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Education</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Real Estate & Property Management</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Messengers and Social Platforms</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Finance</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Catering & Tourism</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>IT & Telecom</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Apps for Marketing</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>E-Commerce & POS Apps</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Entertainment Apps</h2>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4 vc-1" style="">
+        <div class="iner-list">
+          <h2>Construction Apps</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br />
+</section>
+
+<section>
+  <br><br>
+  <h2 class="text-center">Contact Us</h2>
+  <br><br>
+</section>
+
+<footer class="bg-dark">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="">EXITO IT SOLUTIONS</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 <script>
   AOS.init();
 </script>
