@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* jquery-slidebox-2 */
+#jquery-slidebox-2 {
+  width: 300px;
+  margin: 0;
+  padding: 0px;
+  background: #FFF;
+  overflow: hidden;
+  height:180px;
+  z-index: 1020;
+}
+
+#jquery-slidebox-2 .handle {
+  width: 50px;
+  margin: 0;
+  padding: 15px 0;
+  line-height: 100%;
+  background: #ff781e;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  float: left;
+}
+
+#jquery-slidebox-2 .contents {
+  width: 250px;
+  margin: 0;
+  padding: 30px 0 35px 0;
+  float: right;
+}
+#jquery-slidebox-2 .contents p {
+  margin: 0;
+  padding: 0px 35px;
+  line-height: 150%;
+}
+
+
+/* jquery-slidebox-3 */
+#jquery-slidebox-3 {
+  width: 800px;
+  margin: 0;
+  padding: 0 0 0 0;
+  border-top: solid 1px #333333;
+  border-bottom: solid 1px #333333;
+  border-left: solid 1px #333333;
+  background: #EDEDED;
+}
+
+#jquery-slidebox-3 .handle {
+  width: 30px;
+  margin: 0;
+  padding: 15px 0;
+  line-height: 100%;
+  background: #666666;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  float: left;
+}
+
+#jquery-slidebox-3 .contents {
+  width: 760px;
+  margin: 0;
+  padding: 30px 0 35px 0;
+  float: right;
+}
+#jquery-slidebox-3 .contents p {
+  margin: 0;
+  padding: 0px 35px;
+  line-height: 150%;
+}
+
+
+/* jquery-slidebox-4 */
+#jquery-slidebox-4 {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  background: #FFFFFF;
+  z-index: 1020;
+}
+
+#jquery-slidebox-4 .handle {
+  margin: 0;
+  padding: 10px 0;
+  line-height: 100%;
+  background: #0f0053;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#jquery-slidebox-4 .contents {
+  margin: 0;
+  padding: 30px 0 35px 0;
+}
+#jquery-slidebox-4 .contents p {
+  margin: 0;
+  padding: 0px 35px;
+  line-height: 150%;
+}
+
+/* main-contents */
+div#main-contents {
+  margin: 0 0 0 0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+div#main-contents p.box {
+  width: 800px;
+  margin: 30px auto 0 auto;
+  padding: 30px;
+  border: solid 20px #CC0000;
+  text-align: left;
+  line-height: 150%;
+}
+
+
+/*
+============================================================
+	clearfix
+============================================================
+*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
